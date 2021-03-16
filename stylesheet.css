@@ -1,0 +1,118 @@
+/* General Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+  font-family: "Roboto", sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  background-image: linear-gradient(
+    to top left,
+    rgba(255, 255, 255, 0.863),
+    #c39e5c
+  );
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+h3 {
+  font-weight: 100;
+}
+
+/* Pad Layout */
+
+.pad {
+  height: 600px;
+  width: 400px;
+  background-color: #fdf1d6;
+  border: 1px solid rgb(173, 173, 173);
+  border-radius: 5px;
+  box-shadow: 5px 5px 5px rgb(161, 161, 161);
+  overflow: auto;
+}
+
+/* Inputs */
+.input-items {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#do-input {
+  width: 100%;
+  height: 50px;
+  border-radius: 5px 0px 0px 0px;
+  padding: 0px 10px;
+  font-size: 2em;
+  font-weight: 100;
+  color: rgb(0, 0, 0);
+  transition: background-color 0.5s;
+}
+
+#do-button:hover,
+#do-input:hover {
+  background-color: rgba(195, 158, 92, 0.3);
+}
+
+#do-button {
+  width: 20%;
+  height: 50px;
+  font-weight: 300;
+  color: #da723c;
+  font-size: 2rem;
+  border-radius: 0px 5px 0px 0px;
+  padding: 5px;
+  transition: background-color 0.5s;
+}
+
+#do-button,
+.delete,
+#do-input {
+  border: none;
+  background-image: none;
+  background-color: transparent;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  outline: none;
+}
+
+/* Items */
+.item-row {
+  width: 100%;
+  height: 10%;
+  padding: 5px 15px 5px 10px;
+  display: flex;
+  align-items: center;
+  border-top: 1px dashed rgb(87, 87, 87);
+}
+
+.item {
+  font-size: 2em;
+  font-weight: 300;
+  color: #da723c;
+  margin-right: 15px;
+  overflow: hidden;
+}
+
+.delete {
+  height: 100%;
+  margin-right: 4px;
+  margin-left: auto;
+  padding-left: 15px;
+  border-left: 1px dashed rgb(87, 87, 87);
+  color: rgba(145, 9, 30, 0);
+  transition: color 0.2s;
+}
+
+.delete:hover {
+  color: rgba(145, 9, 30, 1);
+}
