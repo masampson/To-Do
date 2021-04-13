@@ -23,7 +23,20 @@
         <input type="submit" for="do-input" id="do-button" value="Do" />
       </form>
 
-      <div class="to-do-items"></div>
+      <div class="tabs-container">
+        <h6 class="tabs" id="active">Active</h6>
+        <h6 class="tabs" id="done">Done</h6>
+        <h6 class="tabs" id="all">All</h6>
+        <h6 class="tabs" id="kill">Clear Done</h6>
+      </div>
+
+      <ul class="to-do-items">
+        <!-- <li class="item-row">
+          <input class="check-off" type="checkbox" name="mark-done" />
+          <label for="mark-done" class="item">${doInput.value}</label>
+          <button class="delete">X</button>
+        </li> -->
+      </ul>
     </div>
   </body>
   <script src="script.js"></script>
